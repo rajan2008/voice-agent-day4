@@ -1,4 +1,4 @@
-Day 2 – Coffee Shop Barista Agent
+# Day 2 – Coffee Shop Barista Agent
 For Day 2, your primary objective is to turn the starter agent into a coffee shop barista that can take voice orders and show a neat text summary.
 
 Primary Goal (Required)
