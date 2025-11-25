@@ -99,4 +99,3 @@ Then open your browser to connect.
 
 ## ✔ This completes Day 4.
 
-# END OF README
