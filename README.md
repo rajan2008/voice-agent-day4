@@ -1,46 +1,102 @@
-📌 Voice Agent – Day 2
+```md
+```
+# Day 4 – Teach-the-Tutor: Active Recall Coach  
+### Murf AI Voice Agent Challenge (10 Days)
 
-Building an AI-powered voice agent using LiveKit, Murf Falcon TTS, and Python as part of the 10 Days Voice Agent Challenge.
+This project implements the **Day 4 Active Recall Tutor Voice Agent**, built using:
 
-🚀 Project Overview
+- **LiveKit Agents**
+- **Murf Falcon TTS (Matthew, Alicia, Ken)**
+- **Deepgram STT**
+- **Google LLM**
+- **Node.js frontend**
 
-This project sets up a voice agent backend that:
+---
 
-Listens to user speech in real time
+## 🎯 What This Agent Does
 
-Processes the audio using a speech recognition pipeline
+This day focuses on the **Teach-the-Tutor learning method**:
 
-Responds using Murf Falcon text-to-speech
+1. **Learn Mode**  
+   The agent explains a concept using summaries from a JSON file.
 
-Interacts through LiveKit voice channels
+2. **Quiz Mode**  
+   The agent asks questions about that concept.
 
-✅ What’s Done on Day 2
+3. **Teach-Back Mode**  
+   The agent asks the user to explain the concept back and gives feedback.
 
-Repository setup
+User can switch modes anytime by voice:
 
-Git initialization and push
+- “Switch to quiz mode”
+- “Teach me loops”
+- “Learn variables”
+- “Go to teach back mode”
 
-Project structure cleanup
+---
 
-Backend environment ready
+## 🧠 Powered by Content File
 
-📁 Folder Structure
-voice-agent-day2/
-│
-├─ src/
-│   └─ agent.py
-│
-├─ requirements.txt
-├─ README.md
-└─ .gitignore
+All concepts come from:
+```
+backend/shared-data/day4_tutor_content.json
+```
+yaml
+Copy code
 
-🛠 Tech Stack
-| Component       | Used For                  |
-| --------------- | ------------------------- |
-| Python          | Backend logic             |
-| LiveKit         | Real-time voice streaming |
-| Murf Falcon TTS | Speech responses          |
-| GitHub          | Version control           |
+You can add more concepts easily.
 
-▶️ How to Run
-uv run python src/agent.py dev
+---
+
+## 🎤 Voices Used (Murf Falcon)
+
+|    Mode    | Murf Voice |
+|------------|------------|
+| Learn      | Matthew    |
+| Quiz       | Alicia     |
+| Teach-Back | Ken        |
+
+---
+
+## ▶️ Run Backend
+```
+cd backend
+python agent.py
+```
+yaml
+Copy code
+
+Backend starts the LiveKit agent.
+
+---
+
+## ▶️ Run Frontend
+
+Frontend same as Day 1–3:
+```
+cd frontend
+npm install
+npm run dev
+```
+yaml
+Copy code
+
+Then open your browser to connect.
+
+---
+
+## 📝 Day 4 Deliverables
+
+1. Working agent using all three modes  
+2. Small JSON content file  
+3. Screen recording showing all modes  
+4. LinkedIn post tagging **@Murf AI**  
+   - Use hashtags  
+     - #MurfAIVoiceAgentsChallenge  
+     - #10DaysofAIVoiceAgents  
+
+---
+
+## ✔ This completes Day 4.
+
+# END OF README
